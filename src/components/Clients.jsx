@@ -41,7 +41,7 @@ function ClientCard() {
           </div>
 
           {/* Segunda carta */}
-          <div className="rounded-lg p-5 mx-auto w-80 md:w-1/3  relative z-10">
+          <div className="rounded-lg p-5 mx-auto md:w-1/3 relative z-10">
           <img src={scnd} className="rounded-t-3xl w-max h-auto lg:h-4/5" alt="Cliente" />
 
             <div className="bg-white rounded-b-3xl">
@@ -64,9 +64,10 @@ function ClientCard() {
           </div>
 
           {/* Tercera carta */}
-          <div className="rounded-lg p-5 mx-auto w-80 md:w-1/3  relative z-10">
-            <img src={thrd} className="rounded-t-3xl w-max h-auto lg:h-4/5" alt="Cliente" />
-            <div className="bg-white rounded-b-3xl w-auto">
+          <div className="rounded-lg p-5 mx-auto md:w-1/3 relative z-10">
+          <img src={thrd} className="rounded-t-3xl w-max h-auto lg:h-4/5" alt="Cliente" />
+
+            <div className="bg-white rounded-b-3xl">
               <div className="flex p-3 text-tahiti-100 text-2xl space-x-1">
                 {[...Array(5)].map((_, i) => (
                   <AiFillStar key={i} />
@@ -74,12 +75,12 @@ function ClientCard() {
               </div>
               <div className="text-left px-3 font-semibold font-nunito">
                 <p>
-                  Uno de los pocos préstamos reales, soy cliente de ellos, si
-                  cumplis con los requisitos, tenes el dinero en el día. Mi
-                  experiencia es 100% recomendable.
+                  Unos genios!! Pedí mi préstamo para comprar telas para mi
+                  negocio. Te mandan por cbu y te cobran por semana! Y podés
+                  transferir, muy confiables!
                 </p>
                 <p className="text-tahiti-100 font-semibold py-2">
-                  - Bruno L.
+                  - Florencia B.
                 </p>
               </div>
             </div>
