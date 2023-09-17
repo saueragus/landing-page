@@ -14,7 +14,7 @@ function Form() {
   
   // Reemplaza el número de teléfono con el que desees contactar
   const mensajeWhatsApp = `Hola! Soy ${nombre} ${apellido}, soy de ${cuenta}, quería hacer una consulta sobre ${asunto}:\n\n${mensaje}`;
-  const numeroTelefono = "+5491125846746";
+  const numeroTelefono = "+5491136049597";
   const mensajeCodificado = encodeURIComponent(mensajeWhatsApp);
   const enlaceWhatsApp = `https://wa.me/${numeroTelefono}?text=${mensajeCodificado}`;
   

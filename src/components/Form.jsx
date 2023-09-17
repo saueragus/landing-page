@@ -12,7 +12,7 @@ function Form({ selectedPrice, selectedSemanas }) {
   // Codifica el mensaje para que sea parte del URL
   const mensajeCodificado = encodeURIComponent(mensaje);
   // Reemplaza el número de teléfono con el que desees contactar
-  const numeroTelefono = "+5491125846746";
+  const numeroTelefono = "+5491136049597";
   // Genera el enlace de WhatsApp
   const enlaceWhatsApp = `https://wa.me/${numeroTelefono}?text=${mensajeCodificado}`;
 

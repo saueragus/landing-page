@@ -12,13 +12,14 @@ import Navbar from "./components/Navbar";
 import Cards from "./components/fromCards";
 import Clients from "./components/Clients";
 import LastForm from "./components/LastForm";
-import SlideLoan from "./components/slideLoan";
-import Countdown from "./components/Countdown";
+import SlideLoan from "./components/SlideLoan";
+import CountdownClock from "./components/CountdownClock";
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const isSmallScreen = window.innerWidth < 769;
+  const numeroTelefono = +5491136049597;
 
   const handleMenuToggle = () => {
     setShowMenu(!showMenu);
@@ -151,7 +152,7 @@ function App() {
                   } transition-all`}
                   style={{ marginLeft: showMenu ? "50%" : "0" }}
                 >
-                  <Countdown scrolled={scrolled} screen={isSmallScreen} />
+                  <CountdownClock scrolled={scrolled} screen={isSmallScreen} />
                 </div>
               </div>
             ) : (
@@ -159,7 +160,7 @@ function App() {
                 <div
                   className={`${scrolled ? "text-zinc-950" : "text-gray-50"}`}
                 >
-                  <Countdown scrolled={scrolled} screen={isSmallScreen} />
+                  <CountdownClock scrolled={scrolled} screen={isSmallScreen} />
                 </div>
               </div>
             )}
@@ -241,7 +242,8 @@ function App() {
               <BsWhatsapp className="text-3xl  border-white text-white border-2 p-1.5 rounded-full" />
             </a>
             <a
-              href="https://www.facebook.com/pagosemanal.ok"
+
+              href={`https://wa.me/${numeroTelefono}`}
               target="_blank"
               className="rounded-full"
             >
