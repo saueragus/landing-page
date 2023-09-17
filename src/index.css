@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Fondo blanco cuando se hace scroll */
+.navbar-scrolled {
+  background-color: #ffffff; /* Cambia el color a tu preferencia */
+  /* Otros estilos de la navbar cuando se hace scroll */
+}
+body {
+  overflow-x: hidden;
+}
+.white-image {
+  filter: brightness(0) invert(1);
+}
+
+/* Estilos de los enlaces en la navbar */
+.nav-links link {
+  /* Agrega tus estilos personalizados aquí */
+  text-decoration: none; /* Ejemplo: quitar subrayado */
+  color: #828f99; /* Ejemplo: color de texto */
+  font-size: 14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+}
+/* En tu archivo CSS o en tu componente */
+.specific-link-style {
+  color: #555 !important;
+  text-decoration: none !important;
+}
+
+.countdown-clock {
+  display: flex;
+  justify-content: space-around;
+}
+
+.time-unit {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.time {
+  font-size: 1.8rem;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(to bottom right, #E84157, #f0794f);
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.time.animate {
+  animation: slide-up 0.5s forwards;
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+
+
+
+.specific-link-style:hover {
+  color: #007bff; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilos cuando se pasa el mouse sobre los enlaces */
+.nav-links a:hover {
+  color: #de4157;
+  text-decoration: none; /* Ejemplo: quitar subrayado */
+  
+}
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    display: inline-block;
+    position: relative;
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    margin-right: 8px;
+    transition: background-color 0.5s;
+  }
+  
+  .checkbox-container input:checked + .checkmark {
+    background-color: #dc3545;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+/* Estilos del track (barra del slider) */
+.MuiSlider-track {
+  height: 8px; /* Altura del track */
+}
+
+/* Estilos del thumb (pulgar) */
+.MuiSlider-thumb {
+  border-radius: 4px !important;  
+  width: 16px; /* Ancho del thumb */
+  height: 16px; /* Altura del thumb */
+  background-color: #E84157; /* Color del thumb */
+}
+
+/* Estilos del valor seleccionado */
+.MuiSlider-valueLabel {
+  font-size: 12px;
+  font-weight: bolder; /* Tamaño de fuente del valor seleccionado */
+}
+
+/* Dentro de tu archivo SlideLoan.css */
+
