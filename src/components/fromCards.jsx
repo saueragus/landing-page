@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import border from "../assets/home-border.png";
 
 function fromCards() {
@@ -28,12 +27,12 @@ function fromCards() {
               Poseer DNI físico con nacionalidad argentina
             </p>
             <div className="mt-auto mx-auto absolute bottom-30 md:bottom-20">
-              <Link
-                to="/contacto"
+              <a
+                href="#contacto"
                 className="no-underline text-tahiti-100 font-nunito text-sm"
               >
                 Solicitalo ➜
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -47,12 +46,12 @@ function fromCards() {
               poder demostrarlos.
             </p>
             <div className="mt-auto mx-auto absolute bottom-30 md:bottom-20">
-              <Link
-                to="/contacto"
+              <a
+                href="#contacto"
                 className="no-underline text-tahiti-100 font-nunito text-sm"
               >
                 Solicitalo ➜
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -65,12 +64,12 @@ function fromCards() {
               El solicitante debe tener entre 30 y 60 años.
             </p>
             <div className="mt-auto mx-auto absolute bottom-30 md:bottom-20">
-              <Link
-                to="/contacto"
+              <a
+                href="#contacto"
                 className="no-underline text-tahiti-100 font-nunito text-sm"
               >
                 Solicitalo ➜
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -84,12 +83,12 @@ function fromCards() {
               deuda
             </p>
             <div className="mt-auto mx-auto absolute bottom-30 md:bottom-20">
-              <Link
-                to="/contacto"
+              <a
+                href="#contacto"
                 className="no-underline text-tahiti-100 font-nunito text-sm"
               >
                 Solicitalo ➜
-              </Link>
+              </a>
             </div>
           </div>
         </div>
