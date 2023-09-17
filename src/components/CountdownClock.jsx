@@ -35,7 +35,7 @@ function CountdownClock({ scrolled, screen, showMenu }) {
           ESTAMOS PRESTANDO
         </h4>
       </center>
-      <div className="countdown-clock">
+      <div className="countdown-clock justify-stretch mx-14">
         <div className="time-unit">
           <p className={`font-nunito font-bold ${scrolled ? "text-zinc-950" : "text-zinc-100"} ${screen ? "text-zinc-950" : "text-zinc-100"}`}>Minutos</p>
           <h1 className="time">{String(minutes).padStart(2, '0')}</h1>
