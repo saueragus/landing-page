@@ -21,6 +21,8 @@ function CountdownClock({ scrolled, screen, showMenu }) {
           } else {
             clearInterval(timer);
             setFinished(true);
+            setMinutes(15);
+            setSeconds(0);
             return 0;
           }
         }
@@ -31,16 +33,16 @@ function CountdownClock({ scrolled, screen, showMenu }) {
   }, [minutes]);
 
   return (
-    <div className={` ${screen ? "scale-75" : "scale-100"} ${finished ? "hidden" : "visible"}`}>
+    <div className={` ${screen ? "scale-75" : "scale-100"}`}>
       <center>
         <h4 className={`font-nunito font-bold ${screen ? "text-zinc-950" : ""}`}>
-          ESTAMOS PRESTANDO
+          Solicitalo ahora
         </h4>
       </center>
-      <div className="countdown-clock">
+      <div className="countdown-clock space-x-2">
       <div className="time-unit">
           <p className={`font-nunito font-bold ${scrolled ? "text-zinc-950" : "text-zinc-100"} ${screen ? "text-zinc-950" : "text-zinc-100"}`}>Días</p>
-          <h1 className="time">{String(days).padStart(2, '0')}</h1>
+          <h1 className="time ">{String(days).padStart(2, '0')}</h1>
         </div>
         <div className="time-unit">
           <p className={`font-nunito font-bold ${scrolled ? "text-zinc-950" : "text-zinc-100"} ${screen ? "text-zinc-950" : "text-zinc-100"}`}>Horas</p>

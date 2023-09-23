@@ -179,13 +179,13 @@ function App() {
                 className="text-4xl font-nunitoextra lg:absolute lg:left-36  w-72 font-bold"
                 style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.5)" }}
               >
-                Simulá tu préstamo
+                Pedilo hoy y pagalo por semana.
               </h1>
               <p
-                className="font-nunito text-md font-semibold lg:absolute lg:left-36 lg:mt-28 shadow-2xl"
+                className="font-nunito text-md font-semibold lg:absolute lg:left-36 lg:mt-36 shadow-2xl"
                 style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.5)" }}
               >
-                Pedilo hoy y pagalo por semana.
+                Tenelo de manera ágil y flexible.
               </p>
             </div>
             <div className="scale-90">
@@ -236,14 +236,6 @@ function App() {
           <div className="flex justify-center items-center space-x-8 mt-4">
             <a
               href="https://www.instagram.com/pago.semanal/"
-              target="_blank"
-              className="rounded-full"
-            >
-              <BsWhatsapp className="text-3xl  border-white text-white border-2 p-1.5 rounded-full" />
-            </a>
-            <a
-
-              href={`https://wa.me/${numeroTelefono}`}
               target="_blank"
               className="rounded-full"
             >

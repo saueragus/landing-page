@@ -50,6 +50,25 @@ body {
   justify-content: center;
   margin-bottom: 8px;
   position: relative;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Aquí se agrega la sombra */
+}
+.client-card{
+  min-height: 220px;
+
+}
+.client-card.active {
+  /* Estilos adicionales para la carta activa (puedes ajustarlos según tus preferencias) */
+  transform: scale(1.2); /* Hace que la carta activa sea un poco más grande */
+  animation: increaseSize 0.5s forwards;
+}
+
+@keyframes increaseSize {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
 }
 
 .time.animate {
@@ -66,6 +85,8 @@ body {
     transform: translateY(-100%);
   }
 }
+
+
 
 
 

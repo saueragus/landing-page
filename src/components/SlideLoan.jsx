@@ -37,6 +37,11 @@ function SlideLoan() {
   };
 
   return (
+    <center>
+      <h1 className="text-white font-bold">
+
+      Simulá tu prestamo
+      </h1>
     <form className="text-center bg-white rounded-3xl font-sans w-96 mb-5 ">
       <div>
         <h1 className="text-2xl py-8">¿Cuánto necesitas?</h1>
@@ -86,7 +91,7 @@ function SlideLoan() {
         />
       </div>
       <div>
-        <h1 className="text-2xl py-8">¿En cuántas semanas?</h1>
+        <h1 className="text-2xl pb-2">¿En cuántas semanas?</h1>
         <div>
           <ul className="text-gray-400 text-sm text-center">
             <li className="mr-4">
@@ -138,7 +143,7 @@ function SlideLoan() {
               {showForm ? (
                 <>
                   {checkboxSelected && (
-                    <div className="px-4 mb-4 ">
+                    <div className="px-4 my-4 ">
                       <Loan
                         selectedPrice={selectedPrice}
                         semanas={selectedSemanas}
@@ -146,7 +151,7 @@ function SlideLoan() {
                     </div>
                   )}
                   {showForm && (
-                    <div className="px-4 mb-4">
+                    <div className="px-4 my-4">
                       <Form
                         selectedPrice={selectedPrice}
                         semanas={selectedSemanas}
@@ -157,7 +162,7 @@ function SlideLoan() {
               ) : (
                 <>
                   {checkboxSelected && (
-                    <div className="px-4 mb-4 ">
+                    <div className="px-4 my-4 ">
                       <Loan
                         selectedPrice={selectedPrice}
                         semanas={selectedSemanas}
@@ -165,7 +170,7 @@ function SlideLoan() {
                     </div>
                   )}
                   {showForm && (
-                    <div className="px-4 mb-4">
+                    <div className="px-4 my-4">
                       <Form
                         selectedPrice={selectedPrice}
                         semanas={selectedSemanas}
@@ -173,11 +178,11 @@ function SlideLoan() {
                     </div>
                   )}
                   <button
-                    className="bg-tahiti-100 p-2 rounded-xl transition-all my-4"
+                    className="bg-tahiti-100 p-2 rounded-3xl w-36 transition-all my-4"
                     onClick={handleButtonClicked}
                     type="button" // Asegúrate de tener el tipo definido como "button"
                   >
-                    <h5 className="text-white">Enviar formulario</h5>
+                    <h5 className="text-white">Continuar</h5>
                   </button>
                 </>
               )}
@@ -186,6 +191,8 @@ function SlideLoan() {
         </div>
       </div>
     </form>
+    </center>
+
   );
 }
 

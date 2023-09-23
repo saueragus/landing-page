@@ -24,8 +24,10 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.9.0",
     "react-router-dom": "6.13.0",
+    "react-slick": "^0.29.0",
     "react-slider": "^2.0.6",
     "recharts": "^2.7.2",
+    "slick-carousel": "^1.8.1",
     "solc": "^0.8.21"
   },
   "resolutions": {

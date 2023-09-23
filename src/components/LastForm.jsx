@@ -24,7 +24,7 @@ function Form() {
   };
 
   return (
-    <div className="z-20 pr-6 pb-16 ">
+    <div className="z-20 pb-16 ">
       <center className="mb-20">
         <h3 className="font-bold font-nunito text-tahiti-100">Contactanos</h3>
         <p className="text-gray-400">
@@ -35,7 +35,7 @@ function Form() {
       <div className="relative text-center top-0 font-sans container flex justify-around">
         <img
           src={rocket}
-          className="h-64 items-center hidden md:block lg:block"
+          className="w-1/2 h-auto items-center hidden lg:block"
           alt="rocket"
         />
         <div className="text-black">
