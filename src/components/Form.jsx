@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import {FiAlertTriangle} from 'react-icons/fi'
 import alert from "../assets/alert.png"
 
 

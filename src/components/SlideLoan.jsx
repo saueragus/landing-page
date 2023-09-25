@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Slider from "@mui/material/Slider";
 import Form from "./Form";
 import Loan from "./Loan";
-import axios from "axios";
+
 
 function SlideLoan() {
-  const [selectedPrice, setSelectedPrice] = useState(8000);
+  const [selectedPrice, setSelectedPrice] = useState(20000);
   const [showForm, setShowForm] = useState(false);
   const [selectedSemanas, setSelectedSemanas] = useState(0);
   const [checkboxSelected, setCheckboxSelected] = useState(false);
@@ -50,7 +50,7 @@ function SlideLoan() {
         <Slider
           min={20000}
           max={200000}
-          step={1000}
+          step={5000}
           value={selectedPrice}
           onChange={handlePriceChange}
           getAriaValueText={getAriaValueText}
