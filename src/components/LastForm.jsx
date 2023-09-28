@@ -30,7 +30,6 @@ function Form() {
         <p className="text-gray-400">
           Dejanos tus datos para poder ofreceter el mejor credito para vos.
         </p>
-        <img src={home} alt="home" />
       </center>
       <div className="relative text-center top-0 font-sans container flex justify-around">
         <img

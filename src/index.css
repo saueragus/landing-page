@@ -54,6 +54,7 @@ body {
 }
 .client-card{
   min-height: 220px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 
 }
 .client-card.active {

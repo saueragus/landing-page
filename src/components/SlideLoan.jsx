@@ -40,11 +40,11 @@ function SlideLoan() {
     <center>
       <h1 className="text-white font-bold">
 
-      Simulá tu prestamo
+      Simulá tu préstamo
       </h1>
     <form className="text-center bg-white rounded-3xl font-sans w-96 mb-5 ">
       <div>
-        <h1 className="text-2xl py-8">¿Cuánto necesitas?</h1>
+        <h1 className="text-2xl py-8">¿Cuánto necesitás?</h1>
       </div>
       <div className="px-12">
         <Slider

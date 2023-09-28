@@ -70,18 +70,16 @@ function App() {
             <ul>
               <li>
                 <div className=" absolute left-28  w-auto">
-                <a
-                  href="#"
-                  >
-                  <img
-                    src={logo}
-                    alt="logo"
-                    className={`h-14 w-max -z-50 mt-3 ${
-                      scrolled ? "black-image" : "white-image"
-                    } ${isSmallScreen ? "hidden" : ""}`}
+                  <a href="#">
+                    <img
+                      src={logo}
+                      alt="logo"
+                      className={`h-14 w-max -z-50 mt-3 ${
+                        scrolled ? "black-image" : "white-image"
+                      } ${isSmallScreen ? "hidden" : ""}`}
                     />
-                </a>
-                    </div>
+                  </a>
+                </div>
                 <ul className="pl-20 h-24 items-center justify-start  ml-60 w-screen pr-20 hidden lg:flex font-nunito font-semibold text-xs">
                   <li>
                     <a
@@ -144,7 +142,9 @@ function App() {
             </div>
             {isSmallScreen ? (
               <div
-                className={`absolute -z-50 flex justify-center items-center min-w-full ${showMenu ? "container" : ""}`}
+                className={`absolute -z-50 flex justify-center items-center min-w-full ${
+                  showMenu ? "container" : ""
+                }`}
               >
                 <div
                   className={`${
@@ -176,21 +176,20 @@ function App() {
           <div className="z-10 flex flex-col md:flex-row md:items-stretch items-center py-20 w-screen justify-around mt-10">
             <div className="text-white mb-8 md:mb-0">
               <h1
-                className="text-4xl font-nunitoextra lg:absolute lg:left-36  w-72 font-bold"
+                className="text-4xl font-nunitoextra lg:absolute lg:left-36  w-80 font-bold"
                 style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.5)" }}
               >
-                Pedilo hoy y pagalo por semana.
+                Nos adaptamos a tu realidad.
               </h1>
               <p
-                className="font-nunito text-md font-semibold lg:absolute lg:left-36 lg:mt-36 shadow-2xl"
+                className="font-nunito text-md font-semibold lg:absolute lg:left-36 lg:mt-24 shadow-2xl"
                 style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.5)" }}
               >
-                Tenelo de manera ágil y flexible.
+                Pedí tu préstamo hoy, pagalo por semana.
               </p>
             </div>
             <div className="scale-90">
-
-            <SlideLoan />
+              <SlideLoan />
             </div>
           </div>
           <div className="container text-zinc-50 flex flex-col justify-center items-center mb-4">
@@ -201,10 +200,13 @@ function App() {
               Conocenos
             </h1>
             <p className="font-nunito text-md w-1/2 text-center pb-8">
-              Somos Pago Semanal, una empresa dedicada al otorgamiento de
-              préstamos para personas que cuentan con ingresos diarios y
-              semanales. Actualmente nos ubicamos como la primer línea de
-              préstamos de pago semanal que brinda sus servicios{" "}
+              Somos Pago Semanal, una empresa consolidada hace más de 10 años
+              dedicada a ayudar a comerciantes y trabajadores independientes a
+              que resuelvan un problema financiero inmediato, decidan realizar
+              una inversión, remodelación o reponer mercadería de su comercio a
+              través de un préstamo de pago semanal. Actualmente nos ubicamos
+              como la primer línea de préstamos de pago semanal que brinda sus
+              servicios 100% online a todo el territorio Argentino.
               <strong className="font-bold">100% online</strong> a todo el
               territorio Argentino.
             </p>
@@ -218,8 +220,9 @@ function App() {
           <Cards />
         </section>
         <section id="solicitantes">
-          <Clients />
+          <Clients isSmallScreen={isSmallScreen} />
         </section>
+
         <section id="contacto">
           <LastForm />
         </section>
